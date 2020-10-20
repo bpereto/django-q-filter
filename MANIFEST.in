@@ -1,0 +1,7 @@
+include README.md
+include LICENSE.md
+recursive-include tests/* *
+recursive-include qfilter/static *.js *.css *.png *.ico *.eot *.svg *.ttf *.woff *.woff2
+recursive-include qfilter/templates *.html
+global-exclude __pycache__
+global-exclude *.py[co]

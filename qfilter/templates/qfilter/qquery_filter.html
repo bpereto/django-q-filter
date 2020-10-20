@@ -1,0 +1,87 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<div class="row">
+    <div class="col-lg-12 mb-0 bordered-tab-contents">
+        <ul class="nav nav-tabs" id="qfilter-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="qfilter-tab-wizard-nav" data-toggle="tab" href="#qfilter-tab-wizard"
+                   role="tab" aria-controls="qfilter-wizard" aria-selected="true">Filter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="qfilter-tab-query-nav" data-toggle="tab" href="#qfilter-tab-query" role="tab"
+                   aria-controls="query" aria-selected="false">Query</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="qfilter-tab-content">
+            <div class="tab-pane show active" id="qfilter-tab-wizard" role="tabpanel"
+                 aria-labelledby="qfilter-wizard-tab">
+                <div id="qfilter-wizard-form-empty" style="display:none;">
+                    {% crispy qquery_filter_formset_empty_form qquery_filter_formset_empty_form.helper %}
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 mb-0">
+                        <div id="qfilter-wizard-multi-form" class="formset-add-container">
+                            <form method="POST">
+                                {% crispy qquery_filter_formset qquery_filter_formset_helper %}
+
+                                <div class="dynamic-form-add"></div>
+                                <div class="row mt-4 mb-0">
+                                    <div class="col-lg-6 mb-0 qfilter-wizard-multi-form-add-more">
+
+                                    </div>
+                                    <div class="col-lg-6 mb-0 text-right">
+                                        <button class="btn btn-primary mb-0" name="qfilter-wizard" value="x"
+                                                type="submit">Apply Filter
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="qfilter-tab-query" role="tabpanel" aria-labelledby="qfilter-query-tab">
+                <form method="GET">
+                    <div class="row">
+                        <div class="col-sm-12 mb-0">
+                            {% crispy qquery_filter_form %}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6 m-0">
+                            <a class="btn btn-default mb-0" data-toggle="collapse" href="#qquery-fields" role="button"
+                               aria-expanded="false">Show all possible fields</a>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 m-0 text-right">
+                            <button type="submit" name="qfilter-query" value="Apply"
+                                    class="btn btn-primary btn-primary mb-0" id="submit-id-qfilter-query">Apply Query
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="qquery-fields" class="col-lg-12 collapse">
+                            <hr>
+                            <table class="table table-sm table-bordered table-responsive">
+                                <thead>
+                                    <th>Field Name</th>
+                                    <th>Q-Field</th>
+                                    <th>Field Type</th>
+                                </thead>
+                                <tbody>
+                                    {% for field, field_type, field_name in qquery_filter_fields %}
+                                    <tr>
+                                        <td>{{field_name}}</td>
+                                        <td>{{field}}</td>
+                                        <td>{{field_type}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

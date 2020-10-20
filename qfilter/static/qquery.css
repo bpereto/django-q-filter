@@ -1,0 +1,31 @@
+/*
+ * QFILTER Style
+ */
+#qfilter-tab-wizard .form-group {
+    margin-bottom: 0;
+}
+
+.qfilter-table > tbody > tr > td {
+    vertical-align: top;
+}
+
+.qfilter-table > tbody > tr > td > ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+/*
+ * BORDER AROUND TAB CONTENT
+ */
+.bordered-tab-contents > .tab-content > .tab-pane {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+}
+
+.bordered-tab-contents > .nav-tabs {
+    margin-bottom: 0;
+}

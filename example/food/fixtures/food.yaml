@@ -1,0 +1,454 @@
+- model: food.ingredienttype
+  pk: 1
+  fields:
+    name: meat
+- model: food.ingredienttype
+  pk: 2
+  fields:
+    name: vegetable
+- model: food.ingredienttype
+  pk: 3
+  fields:
+    name: spice
+- model: food.ingredienttype
+  pk: 5
+  fields:
+    name: beverage
+- model: food.ingredienttype
+  pk: 6
+  fields:
+    name: pasta
+- model: food.ingredienttype
+  pk: 7
+  fields:
+    name: fish
+- model: food.ingredienttype
+  pk: 8
+  fields:
+    name: cheese
+- model: food.ingredienttype
+  pk: 9
+  fields:
+    name: refined
+- model: food.ingredienttype
+  pk: 10
+  fields:
+    name: grain
+- model: food.ingredienttype
+  pk: 11
+  fields:
+    name: milky
+- model: food.ingredienttype
+  pk: 12
+  fields:
+    name: animal product
+- model: food.ingredient
+  pk: 1
+  fields:
+    name: minced beef
+    type: 1
+    created: 2020-10-20 19:05:13.529024+00:00
+    updated: 2020-10-20 19:05:13.529192+00:00
+- model: food.ingredient
+  pk: 2
+  fields:
+    name: carrot
+    type: 2
+    created: 2020-10-20 19:05:34.675979+00:00
+    updated: 2020-10-20 19:05:34.676097+00:00
+- model: food.ingredient
+  pk: 3
+  fields:
+    name: buillon
+    type: 3
+    created: 2020-10-20 19:07:29.723805+00:00
+    updated: 2020-10-20 19:07:29.723908+00:00
+- model: food.ingredient
+  pk: 4
+  fields:
+    name: salt
+    type: 3
+    created: 2020-10-20 19:07:43.558802+00:00
+    updated: 2020-10-20 19:08:12.952974+00:00
+- model: food.ingredient
+  pk: 5
+  fields:
+    name: pepper
+    type: 3
+    created: 2020-10-20 19:08:37.812617+00:00
+    updated: 2020-10-20 19:08:40.901291+00:00
+- model: food.ingredient
+  pk: 6
+  fields:
+    name: red wine
+    type: 5
+    created: 2020-10-20 19:09:00.875113+00:00
+    updated: 2020-10-20 19:09:00.875213+00:00
+- model: food.ingredient
+  pk: 7
+  fields:
+    name: macaroni
+    type: 6
+    created: 2020-10-20 19:09:36.631737+00:00
+    updated: 2020-10-20 19:09:36.631834+00:00
+- model: food.ingredient
+  pk: 8
+  fields:
+    name: salmon
+    type: 7
+    created: 2020-10-20 19:09:54.874666+00:00
+    updated: 2020-10-20 19:09:54.874763+00:00
+- model: food.ingredient
+  pk: 9
+  fields:
+    name: entrecote
+    type: 1
+    created: 2020-10-20 19:10:08.506413+00:00
+    updated: 2020-10-20 19:10:08.506510+00:00
+- model: food.ingredient
+  pk: 10
+  fields:
+    name: salad
+    type: 2
+    created: 2020-10-20 19:10:22.359573+00:00
+    updated: 2020-10-20 19:10:22.359670+00:00
+- model: food.ingredient
+  pk: 11
+  fields:
+    name: ham
+    type: 1
+    created: 2020-10-20 19:10:32.604713+00:00
+    updated: 2020-10-20 19:10:32.604808+00:00
+- model: food.ingredient
+  pk: 12
+  fields:
+    name: tomato
+    type: 2
+    created: 2020-10-20 19:10:40.913997+00:00
+    updated: 2020-10-20 19:10:40.914095+00:00
+- model: food.ingredient
+  pk: 13
+  fields:
+    name: spaghetti
+    type: 6
+    created: 2020-10-20 19:10:51.962520+00:00
+    updated: 2020-10-20 19:10:51.962615+00:00
+- model: food.ingredient
+  pk: 14
+  fields:
+    name: basilica
+    type: 3
+    created: 2020-10-20 19:11:03.366689+00:00
+    updated: 2020-10-20 19:11:03.366788+00:00
+- model: food.ingredient
+  pk: 15
+  fields:
+    name: mushrooms
+    type: 2
+    created: 2020-10-20 19:11:15.171252+00:00
+    updated: 2020-10-20 19:11:15.171345+00:00
+- model: food.ingredient
+  pk: 16
+  fields:
+    name: parmesan
+    type: 8
+    created: 2020-10-20 19:11:31.927735+00:00
+    updated: 2020-10-20 19:11:31.927854+00:00
+- model: food.ingredient
+  pk: 17
+  fields:
+    name: dough
+    type: 9
+    created: 2020-10-20 19:13:14.833437+00:00
+    updated: 2020-10-20 19:13:14.833532+00:00
+- model: food.ingredient
+  pk: 18
+  fields:
+    name: rice
+    type: 10
+    created: 2020-10-20 19:14:13.427389+00:00
+    updated: 2020-10-20 19:14:13.427526+00:00
+- model: food.ingredient
+  pk: 19
+  fields:
+    name: cream
+    type: 11
+    created: 2020-10-20 19:15:06.176865+00:00
+    updated: 2020-10-20 19:15:06.177006+00:00
+- model: food.ingredient
+  pk: 20
+  fields:
+    name: safran
+    type: 3
+    created: 2020-10-20 19:15:22.961923+00:00
+    updated: 2020-10-20 19:15:22.962037+00:00
+- model: food.ingredient
+  pk: 21
+  fields:
+    name: flour
+    type: 10
+    created: 2020-10-20 19:15:53.482824+00:00
+    updated: 2020-10-20 19:15:53.482920+00:00
+- model: food.ingredient
+  pk: 22
+  fields:
+    name: yeast
+    type: 10
+    created: 2020-10-20 19:16:11.191037+00:00
+    updated: 2020-10-20 19:16:11.191131+00:00
+- model: food.ingredient
+  pk: 23
+  fields:
+    name: butter
+    type: 11
+    created: 2020-10-20 19:16:34.104430+00:00
+    updated: 2020-10-20 19:16:34.104523+00:00
+- model: food.ingredient
+  pk: 24
+  fields:
+    name: water
+    type: 5
+    created: 2020-10-20 19:16:46.371263+00:00
+    updated: 2020-10-20 19:16:46.371359+00:00
+- model: food.ingredient
+  pk: 25
+  fields:
+    name: poulet
+    type: 1
+    created: 2020-10-20 19:17:23.300129+00:00
+    updated: 2020-10-20 19:17:23.300228+00:00
+- model: food.ingredient
+  pk: 26
+  fields:
+    name: asia noodles
+    type: 6
+    created: 2020-10-20 19:18:10.171830+00:00
+    updated: 2020-10-20 19:18:10.171928+00:00
+- model: food.ingredient
+  pk: 27
+  fields:
+    name: soja sauce
+    type: 3
+    created: 2020-10-20 19:18:35.980699+00:00
+    updated: 2020-10-20 19:18:35.980841+00:00
+- model: food.ingredient
+  pk: 28
+  fields:
+    name: red thai curry
+    type: 9
+    created: 2020-10-20 19:19:02.594095+00:00
+    updated: 2020-10-20 19:19:02.594192+00:00
+- model: food.ingredient
+  pk: 29
+  fields:
+    name: egg
+    type: 12
+    created: 2020-10-20 19:21:34.783254+00:00
+    updated: 2020-10-20 19:21:34.783350+00:00
+- model: food.ingredient
+  pk: 30
+  fields:
+    name: bacon
+    type: 1
+    created: 2020-10-20 19:21:43.805539+00:00
+    updated: 2020-10-20 19:21:43.805712+00:00
+- model: food.ingredient
+  pk: 31
+  fields:
+    name: milk
+    type: 11
+    created: 2020-10-20 19:22:19.103934+00:00
+    updated: 2020-10-20 19:22:19.104032+00:00
+- model: food.ingredient
+  pk: 32
+  fields:
+    name: bread
+    type: 9
+    created: 2020-10-20 19:23:39.699390+00:00
+    updated: 2020-10-20 19:23:39.699474+00:00
+- model: food.recipe
+  pk: 1
+  fields:
+    name: minced beef with macarons
+    created: 2020-10-20 19:12:02.258803+00:00
+    updated: 2020-10-20 19:12:02.258896+00:00
+    cook_time: 20
+    ingredients:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+- model: food.recipe
+  pk: 2
+  fields:
+    name: pizza with ham
+    created: 2020-10-20 19:12:28.039369+00:00
+    updated: 2020-10-20 19:13:23.672041+00:00
+    cook_time: 25
+    ingredients:
+    - 11
+    - 12
+    - 14
+    - 15
+    - 16
+    - 17
+- model: food.recipe
+  pk: 3
+  fields:
+    name: salmon with safran cream sauce
+    created: 2020-10-20 19:15:28.195092+00:00
+    updated: 2020-10-20 19:15:28.195187+00:00
+    cook_time: 30
+    ingredients:
+    - 8
+    - 18
+    - 19
+    - 20
+- model: food.recipe
+  pk: 4
+  fields:
+    name: bread
+    created: 2020-10-20 19:16:55.774644+00:00
+    updated: 2020-10-20 19:16:55.774775+00:00
+    cook_time: 60
+    ingredients:
+    - 4
+    - 21
+    - 22
+    - 23
+    - 24
+- model: food.recipe
+  pk: 5
+  fields:
+    name: stuffed poulet
+    created: 2020-10-20 19:17:41.305889+00:00
+    updated: 2020-10-20 19:17:41.305977+00:00
+    cook_time: 20
+    ingredients:
+    - 14
+    - 15
+    - 16
+    - 19
+    - 25
+- model: food.recipe
+  pk: 6
+  fields:
+    name: thai curry
+    created: 2020-10-20 19:19:13.191289+00:00
+    updated: 2020-10-20 19:19:13.191419+00:00
+    cook_time: 20
+    ingredients:
+    - 15
+    - 19
+    - 25
+    - 26
+    - 27
+    - 28
+- model: food.recipe
+  pk: 7
+  fields:
+    name: entrecote with salad and a good glass of wine
+    created: 2020-10-20 19:19:51.366456+00:00
+    updated: 2020-10-20 19:19:51.366545+00:00
+    cook_time: 15
+    ingredients:
+    - 6
+    - 9
+    - 10
+- model: food.recipe
+  pk: 8
+  fields:
+    name: spaghetti tomtato
+    created: 2020-10-20 19:20:28.000635+00:00
+    updated: 2020-10-20 19:20:28.000714+00:00
+    cook_time: 30
+    ingredients:
+    - 4
+    - 12
+    - 13
+    - 14
+- model: food.recipe
+  pk: 9
+  fields:
+    name: eggs and bacon
+    created: 2020-10-20 19:21:54.937667+00:00
+    updated: 2020-10-20 19:21:54.937755+00:00
+    cook_time: 15
+    ingredients:
+    - 29
+    - 30
+- model: food.recipe
+  pk: 10
+  fields:
+    name: omelette
+    created: 2020-10-20 19:23:01.060081+00:00
+    updated: 2020-10-20 19:23:01.060166+00:00
+    cook_time: 45
+    ingredients:
+    - 4
+    - 21
+    - 23
+    - 29
+    - 31
+- model: food.recipe
+  pk: 11
+  fields:
+    name: bread and stuff
+    created: 2020-10-20 19:23:57.256723+00:00
+    updated: 2020-10-20 19:23:57.256809+00:00
+    cook_time: 0
+    ingredients:
+    - 11
+    - 23
+    - 32
+- model: food.cookbook
+  pk: 1
+  fields:
+    name: breads world
+    created: 2020-10-20 19:24:29.820507+00:00
+    updated: 2020-10-20 19:24:29.820597+00:00
+    recipes:
+    - 4
+    - 11
+- model: food.cookbook
+  pk: 2
+  fields:
+    name: meating along
+    created: 2020-10-20 19:24:47.467378+00:00
+    updated: 2020-10-20 19:25:17.516433+00:00
+    recipes:
+    - 1
+    - 3
+    - 5
+    - 7
+- model: food.cookbook
+  pk: 3
+  fields:
+    name: pasta and more
+    created: 2020-10-20 19:25:08.868507+00:00
+    updated: 2020-10-20 19:25:08.868595+00:00
+    recipes:
+    - 1
+    - 8
+- model: food.cookbook
+  pk: 4
+  fields:
+    name: asian kitchen
+    created: 2020-10-20 19:25:30.199679+00:00
+    updated: 2020-10-20 19:25:30.199770+00:00
+    recipes:
+    - 6
+- model: food.cookbook
+  pk: 5
+  fields:
+    name: easy going
+    created: 2020-10-20 19:25:50.900831+00:00
+    updated: 2020-10-20 19:25:55.565041+00:00
+    recipes:
+    - 2
+    - 9
+    - 10
+    - 11
