@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/2.2/topics/db/queries/#complex-lookups-with-q-
 #
 # ex. Q(name="QQUERY_ALLOWED_FIELD_CHARS")
 # Normal Chars: \w
-# Spaces and Puncuation: \s - . /
+# Spaces and Puncuation: \s - . / :
 # Regex for Q(name__regex="^[a-z]$"): * + $ | ( ) [ ] { } ^
-QQUERY_ALLOWED_FIELD_CHARS = r'/\s\w\-\.\*\+\$\|\{\}\^\(\)\\[\]'
+QQUERY_ALLOWED_FIELD_CHARS = r'/\s\w\-\.\*\+\$\|\{\}\^\(\)\\[\]\:'
 
 #
 # Regex Hell
