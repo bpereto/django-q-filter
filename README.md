@@ -57,8 +57,8 @@ class RecipeListView(QQueryViewMixin, ListView):
     ordering = ['name']
 ```
 
-[build-status-image]: https://secure.travis-ci.org/bpereto/django-q-filter.svg?branch=master
-[travis]: https://travis-ci.org/bpereto/django-q-filter?branch=master
+[build-status-image]: https://travis-ci.com/bpereto/django-q-filter.svg?branch=master
+[travis]: https://travis-ci.com/github/bpereto/django-q-filter
 [coverage-status-image]: https://img.shields.io/codecov/c/github/bpereto/django-q-filter/master.svg
 [codecov]: https://codecov.io/github/bpereto/django-q-filter?branch=master
 [pypi-version]: https://img.shields.io/pypi/v/django-q-filter.svg
