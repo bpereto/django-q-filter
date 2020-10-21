@@ -23,7 +23,7 @@ matrix:
       - { python: "3.9-dev", env: DJANGO=master }
 
       - python: "3.8"
-        env: TOXENV=dist
+        env: TOXENV=base
         script:
           - python setup.py bdist_wheel
           - rm -r django_q_filter.egg-info
