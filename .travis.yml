@@ -27,7 +27,7 @@ matrix:
         script:
           - python setup.py bdist_wheel
           - rm -r django_q_filter.egg-info
-          - tox --installpkg ./dist/django-q-query-*.whl
+          - tox --installpkg ./dist/django_q_query-*.whl
           - tox  # test sdist
 
     allow_failures:
