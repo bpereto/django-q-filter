@@ -26,7 +26,7 @@ matrix:
         env: TOXENV=dist
         script:
           - python setup.py bdist_wheel
-          - rm -r django-q-query.egg-info
+          - rm -r django_q_filter.egg-info
           - tox --installpkg ./dist/django-q-query-*.whl
           - tox  # test sdist
 
