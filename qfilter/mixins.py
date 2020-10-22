@@ -6,7 +6,7 @@ __all__ = (
     'QQueryViewMixin',
 )
 
-# pylint: disable=attribute-defined-outside-init
+# pylint: disable=attribute-defined-outside-init,line-too-long,protected-access
 
 import logging
 
@@ -245,18 +245,20 @@ class QQueryViewMixin:
         """
         if self.request.method == 'GET':
             self.qfilter = self.request.GET.get('qfilter', None)
-            if self.request.GET.get('qfilter-merged', False):
+            if self.request.GET.get('qfilter-merged', None):
                 self.qfilter_options['merged'] = True
-
+            else:
+                self.qfilter_options['merged'] = False
         return super().get(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
         """
         get qfilter wizard parameters from post
         """
-        print(self.request.POST)
         if self.request.POST.get('qfilter-wizard'):
             self.qfilter = self._compile_query_from_wizard()
-            if self.request.POST.get('qfilter-merged', False):
+            if self.request.POST.get('qfilter-merged', None):
                 self.qfilter_options['merged'] = True
+            else:
+                self.qfilter_options['merged'] = False
         return super().get(request, *args, **kwargs)

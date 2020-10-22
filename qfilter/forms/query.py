@@ -1,6 +1,7 @@
 """
 Q Query Forms
 """
+# pylint: disable=redefined-builtin,line-too-long
 
 __all__ = (
     'QueryFilterForm',
@@ -9,11 +10,12 @@ __all__ = (
     'QueryFilterWizardFormSetHelper'
 )
 
-from qfilter import vars
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Column, Div, Layout, Row
 from django import forms
 from django.core.validators import RegexValidator
+
+from qfilter import vars
 
 
 class QueryFilterForm(forms.Form):
@@ -30,7 +32,7 @@ class QueryFilterForm(forms.Form):
     qfilter = forms.CharField(required=False,
                               empty_value=None,
                               label="Django Q Query",
-                              validators=[RegexValidator(vars.QQUERY_REGEX)],  # pylint: disable=line-too-long
+                              validators=[RegexValidator(vars.QQUERY_REGEX)],
                               widget=forms.TextInput(attrs={'pattern': vars.QQUERY_REGEX, 'class':'w-100'})
                               )
 

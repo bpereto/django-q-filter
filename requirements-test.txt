@@ -1,2 +1,4 @@
 django-crispy-forms>=1.9.2
 coverage
+pylint
+pylint-django

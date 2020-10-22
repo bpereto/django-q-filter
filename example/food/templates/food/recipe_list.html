@@ -34,6 +34,7 @@
         <a href="#" class="btn btn-success text-right" data-toggle="modal" data-target="#qfilter-modal">Q Filter</a>
 
         {% if qfilter %}
+        Merged: {{ qfilter_options.merged }}
         <div class="alert alert-secondary mt-2" role="alert">
             Active Filter: <b>{{qfilter}}</b>
             <a href="" class="float-right">

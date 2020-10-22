@@ -1,3 +1,6 @@
+"""
+utils for qfilter
+"""
 import itertools
 import logging
 
@@ -64,6 +67,7 @@ def get_short_field_name(model_field):
     """
     get field name composed of model object name and model field name
     """
+    # pylint: disable=protected-access
     return '{}.{}'.format(model_field.model._meta.object_name, model_field.name)
 
 def merge(shared_key, merge_fields, *iterables):
