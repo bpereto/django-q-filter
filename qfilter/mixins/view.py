@@ -1,5 +1,5 @@
 """
-Mixins for Inventory
+Mixins for views
 """
 
 __all__ = (
@@ -14,16 +14,16 @@ from django.contrib import messages
 from django.db.models import Q  # pylint: disable=unused-import
 from django.db.models import F
 
-from .forms import (QueryFilterForm, QueryFilterWizardFormSet, QueryFilterWizardFormSetHelper)
-from . import utils
-from .utils import eval_qquery
+from ..forms import (QueryFilterForm, QueryFilterWizardFormSet, QueryFilterWizardFormSetHelper)
+from .. import utils
+from ..utils import eval_qquery
 
 LOGGER = logging.getLogger(__name__)
 
 
 class QQueryViewMixin:
     """
-    Mixin to enhance View with Q Query functionality
+    Mixin to enhance django view with Q Query functionality
 
     - get lookup expressions from Q Query Statement
     - get field names from QuerySet and Q Query Statement

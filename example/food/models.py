@@ -1,6 +1,10 @@
 from django.db import models
+from qfilter.mixins import QQueryMatchMixin
+
+import reversion
 
 
+@reversion.register()
 class IngredientType(models.Model):
     """
     type of ingredient
@@ -11,8 +15,8 @@ class IngredientType(models.Model):
     def __str__(self):
         return self.name
 
-
-class Ingredient(models.Model):
+@reversion.register()
+class Ingredient(models.Model, QQueryMatchMixin):
     """
     ingredient
     """
@@ -25,7 +29,8 @@ class Ingredient(models.Model):
         return self.name
 
 
-class Recipe(models.Model):
+@reversion.register(follow=['ingredients'])
+class Recipe(models.Model, QQueryMatchMixin):
     """
     recipe with ingredients
     """
@@ -38,7 +43,7 @@ class Recipe(models.Model):
     def __str__(self):
         return self.name
 
-
+@reversion.register()
 class Cookbook(models.Model):
     """
     cookbook which has recipes.

@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+import sys
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'qfilter',
+    'reversion',
     'food'
 ]
 
@@ -121,3 +122,34 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+LOGGING = {
+        'version': 1,
+        'disable_existing_loggers': False,
+        'formatters': {
+            'verbose': {
+    'format': "[%(asctime)s] %(levelname)s %(funcName)s: %(message)s",
+                'datefmt': "%d/%b/%Y %H:%M:%S"
+            }
+        },
+        'handlers': {
+            'console': {
+                'level': 'DEBUG',
+                'class': 'logging.StreamHandler',
+                'stream': sys.stdout,
+                'formatter': 'verbose'
+            },
+        },
+        'loggers': {
+
+            'django_test': {
+                'handlers': ['console'],
+                'level': 'DEBUG',
+            },
+            '': {
+                'handlers': ['console'],
+                'level': 'DEBUG',
+            }
+        }
+}
